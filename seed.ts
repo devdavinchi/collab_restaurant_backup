@@ -5,7 +5,7 @@ import MenuItem from './backend/models/MenuItem';
 import User from './backend/models/User';
 import bcrypt from 'bcryptjs';
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/feasto';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/food-delivery';
 
 async function seed() {
   await mongoose.connect(MONGODB_URI);
